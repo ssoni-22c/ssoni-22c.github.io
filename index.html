@@ -102,18 +102,15 @@ We are borrowing this template for use with the capstone program
 			<li> Specific results found in the paper </li>
 		</ul>
 				
-		<strong>Comparison of Machine Learning (ML) Methods for Survival Data</strong><br>
-                <ul>
-                <li> Developed a simulation study to compare ML methods for predicting survival outcome. </li>
-		<li> Wrote parallelized code (and deployed on AWS EC2) to efficiently run simulation study.</li>
+		<strong> Gold commodity time series analysis </strong><br>
+        <ul>
+            <li> Analyzed 60+ years of gold price data (1960-2024) from the World Bank Commodity Price dataset to model the impact of major economic shocks and assess long-run relationships with related assets </li>
+			<li> Diagnosed non-stationarity and trend using ACF/PACF and spectral density analysis; applied log transformation and differencing, then validated model fit using the Ljung-Box test </li>
+			<li> Found that a full-series ARIMA(1,1,2) model failed due to the 1980 gold price shock (Iranian Revolution, Volcker rate hikes), but an ARIMA(1,1,1) model fit well when isolating the 2000-2024 period, and used it to forecast future prices </li>
+			<li> Conducted Johansen cointegration tests to evaluate long-run relationships between gold, silver, and crude oil, finding gold and oil cointegrated across the full period, while gold and silver were cointegrated only after 2000 </li>
+			<li> Interpreted results in the context of macroeconomic drivers (inflation, monetary policy, safe-haven demand) and detailed findings in a written report </li>
 		</ul>
-		<strong><a href = "https://github.com/nrs02004/Jiujitsu-ELO">Ranking Models for Jiujitsu Competitors</a></strong><br>
-                <ul>
-                <li> Developed R/C++ code for efficiently fitting penalized conditional logistic regression. </li>
-		<li> Applied this to a novel dataset with ~2.5k competitors and ~8k matches to identify top competitors.</li>
-		<li> Empirically explored the impact of tuning parameter selection in this problem. </li>
-		</ul>
-		    
+			    
 
             </div>
 
